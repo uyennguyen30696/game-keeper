@@ -20,7 +20,6 @@ Game Keeper is an App to Explore, Search, Filter and Save your favorite board ga
 Filtering is also available to help find certain games by amount of players, game time and minimum age.
 
 Check out the deployed link hosted on Heroku [here](https://game-keeper-app.herokuapp.com/). You can use this account to test the site: 
-
 <br>Email: test@yahoo.com
 <br>Password: test
 
