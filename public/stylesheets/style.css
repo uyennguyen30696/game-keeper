@@ -44,6 +44,8 @@ form.signup, form.login {
 
 .jumbotron {
   background-image: url("../img/dicebackground2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   padding-bottom: 1rem;
   padding-top: 1rem;
