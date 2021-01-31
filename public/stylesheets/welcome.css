@@ -1,0 +1,9 @@
+.hideListLink, .hideLogout {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .signup-display-big-screen {
+        display: none;
+    }
+}

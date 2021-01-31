@@ -1,14 +1,12 @@
 # Game Keeper
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-Contributions by Madeline Morris, Rachel Kroetch, Rebecca Blanton, and Uyen Nguyen.
     
 ## Table of Contents
 ==================
 * [Description](#Description)
 * [Technologies](#Technologies) 
 * [User Stories](#UserStories)
-* [license](#license) 
+* [license](#License) 
 * [Collaborators](#Collaborators)
 * [Questions](#Questions)
 * [Examples](#Examples)
@@ -19,21 +17,32 @@ Contributions by Madeline Morris, Rachel Kroetch, Rebecca Blanton, and Uyen Nguy
 
 Game Keeper is an App to Explore, Search, Filter and Save your favorite board games. The main page has search function to search through a large database of board games with information about players, playtime, min. recommended age, user rating, price and even rules. You can login and save games you would like to buy as well as store games you own to your personal logins. 
 
-filtering is also available to help find certain games by amount of players, game time and minimum age.
+Filtering is also available to help find certain games by amount of players, game time and minimum age.
+
+Check out the deployed link hosted on Heroku [here](https://game-keeper-app.herokuapp.com/). You can use this account to test the site: 
+
+<br>Email: test@yahoo.com
+<br>Password: test
+
+### Screenshots
+
+![img of Welcome page](./public/img/membersScreenshot.png)
+![img of Wishlist page](./public/img/wishlist.png)
+
 ## Technologies
 
 * Javascript for site logic and functionality
 * Node to download packages
 * Handlebars for HTML pages
-* Passport to handle login
-* JWT.IO for securing logins with web token
+* Passport to handle authentication
+* JWT for securing logins with web token
 * Express for creating server
 * MySQL for database 
 * Seqelize to interact with database 
-* board game atlas API to pull all board game info from thier Database
+* Board game atlas API to pull all board game info from thier Database
 * Heroku to deploy site
 * JawsDB to host Database while on Heroku
-* bootstrap for User Interface
+* Bootstrap for User Interface
 * GSAP for animation of die and welcome
 * Font Awesome Library for icons
 
@@ -65,19 +74,11 @@ Then I can use filters to pick number of players and age and be given a random g
 This application is covered under the MIT License. Please see any additional files in GitHub for details.
 ### Collaborators
 
-This page was created collectively by Madeline Morris, Rachel Kroetch, Rebecca Blanton, and Uyen Nguyen.
+This page was created collectively by Uyen Nguyen, Rachel Kroetch, Rebecca Blanton, and Madeline Morris.
 ### Questions
 
 If you have any questions please reach out at our Sites
-* [Madeline Morris](https://github.com/madehopemorr)
+* [Uyen Nguyen](https://github.com/uyennguyen30696)
 * [Rachel Kroetch](https://github.com/rekroetch)
 * [Becca Blanton](https://github.com/BeccaBlanton)
-* [Uyen Nguyen](https://github.com/uyennguyen30696)
-
-
-### Example
-[link to Deployed Site]()
-Screenshots of Web Page
-![img of Welcome page](./public/img/gamekeeperWelcome.png)
-![img of Wishlist Page](./public/img/gamekeeperWishlist.png)
-![img of Login Page](./public/img/gamekeeperLogin.png)
+* [Madeline Morris](https://github.com/madehopemorr)

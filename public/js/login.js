@@ -42,7 +42,7 @@ $(document).ready(() => {
         // If there's an error, log the error
       })
       .catch(err => {
-        if (err) throw err;
+        console.log(err);
 
         const alert = document.querySelector("#wrong-user-alert");
         alert.classList.remove("hide");

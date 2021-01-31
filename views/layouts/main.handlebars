@@ -34,22 +34,37 @@
           <a href="/members" class="list-group-item list-group-item-action bg-dark sidebarText"><button
               class="popup btn btn-secondary">Home</button></a>
 
-          <a href="/wishlist" class=" hideLink list-group-item list-group-item-action bg-dark sidebarText">My
-            Wishlist</a>
-          <a class="list-group-item list-group-item-action bg-dark sidebarText"><button type="button"
-              class="popup hidePopup btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-              data-bs-placement="right" data-bs-content="* Please log in to access your wishlist.">
-              My Wishlist</button></a>
+          <a href="/wishlist" class="hideListLink list-group-item list-group-item-action bg-dark sidebarText"><button
+              class="popup btn btn-secondary">My Wishlist</button></a>
 
-          <a href="/mygames" class=" hideLink list-group-item list-group-item-action bg-dark sidebarText">My Games</a>
-          <a href="/mygames" class="list-group-item list-group-item-action bg-dark sidebarText"><a
-              class="list-group-item list-group-item-action bg-dark sidebarText"><button type="button"
-                class="popup hidePopup btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-                data-bs-placement="right" data-bs-content="* Please log in to access your games.">
-                My Games</button></a>
+          <a href="/mygames" class="hideListLink list-group-item list-group-item-action bg-dark sidebarText"><button
+              class="popup btn btn-secondary">My Games</button></a>
+
+            <a href="/signup" class="hideLink list-group-item list-group-item-action bg-dark sidebarText"><button
+                class="popup btn btn-secondary">Sign up</button></a>
+
+            <a href="/login" class="hideLink list-group-item list-group-item-action bg-dark sidebarText"><button
+                class="popup btn btn-secondary">Log in</button></a>
+
+            <a href="/logout" class="hideLogout list-group-item list-group-item-action bg-dark sidebarText"><button
+                class="popup btn btn-secondary" onclick="removeTokenFromSessionStorage()">Log out</button></a>
+            <script>
+              function removeTokenFromSessionStorage() {
+                sessionStorage.removeItem("myToken");
+              };
+            </script>
+
             <br>
-
             <img src="img/greendie.png" alt="green die" id="greendie">
+        </div>
+
+        <div class="side-footer">
+          <p class="lead">Roll the dice
+            <br>and get board
+          </p>
+          Icon made by Delapouite.
+          <br>
+          https://game-icons.net
         </div>
       </div>
       <!-- /#sidebar-wrapper -->
@@ -63,15 +78,6 @@
       <!-- /#page-content-wrapper -->
 
     </div>
-
-    <footer class="footer">
-      <p class="lead">Roll the dice
-        <br>and get board
-      </p>
-      Icon made by Delapouite.
-      <br>
-      https://game-icons.net
-    </footer>
 
     <script type="text/javascript" src="js/main.js"></script>
 

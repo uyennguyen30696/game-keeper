@@ -4,6 +4,12 @@
   display: none;
 }
 
+.navbar-toggler {
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+}
+
 .popup {
   border: transparent !important;
   background-color: transparent !important;
@@ -17,11 +23,22 @@ body {
   font-family: monospace;
 }
 
+.side-footer {
+  position: relative;
+  left: 5px;
+  bottom: -490px;
+  margin-left: 5px;
+  margin-bottom: 500px;
+  color: white;
+}
+
 form.signup, form.login {
   margin-top: 50px;
 }
 
 .member-name {
+  position: relative;
+  float: right;
   padding: 10px;
 }
 
@@ -31,6 +48,15 @@ form.signup, form.login {
   padding-bottom: 1rem;
   padding-top: 1rem;
   border-bottom-style: ridge;
+}
+
+.search-bar {
+  width: 80%;
+  height: 60px;
+}
+
+.filter-container {
+  width: 70%;
 }
 
 .filter-by {
@@ -43,6 +69,10 @@ form.signup, form.login {
   display: flex;
   justify-content: center;
   border-radius: 10px;
+}
+
+.list-group {
+  margin-bottom: 50px;
 }
 
 .searchGames, .popGames {
@@ -133,6 +163,10 @@ ul {
 
 /* headers on welcome page */
 
+.welcome {
+  margin-bottom: 30px;
+}
+
 .welcomeTitles {
   text-align: center;
   margin-top: 10px;
@@ -166,6 +200,10 @@ ul {
 
 .wishlistItem.active {
   background-color: black;
+}
+
+.signup-display-big-screen {
+  margin-bottom: 50px;
 }
 
 /* Add a background color to the button if it is clicked on */
@@ -229,9 +267,58 @@ ul {
 
 /* login page */
 
-.loginCard {
+.loginCard, .signupCard {
   margin: 50px;
   padding: 10px;
   background-color: black;
   border: 4px solid #3e4444;
+}
+
+@media (max-width: 370px) {
+  .heartBtn, .ownBtn, .deleteBtn {
+    width: 47px;
+    height: 47px;
+    margin-top: 10px;
+  }
+  .ownBtn {
+    margin-right: 30px;
+  }
+  .deleteBtn {
+    margin-left: -30px;
+  }
+  .wishlistBtn {
+    margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .searchbar, .filter, .signup-col, .popularGame, .searchGame, .each-wish-card, .each-own-card {
+    width: 100%;
+  }
+  .mainBtn {
+    position: relative;
+    top: -78px;
+    right: -88px;
+  }
+  .mainBtn2 {
+    position: relative;
+    top: -78px;
+    right: -89px;
+  }
+  .wishlistBtn {
+    position: relative;
+    bottom: 75px;
+    left: 200px
+  }
+  .mygamesBtn {
+    position: relative;
+    bottom: 75px;
+    left: 250px;
+  }
+  .panel {
+    height: 260px;
+  }
+  footer {
+    display: none;
+  }
 }
