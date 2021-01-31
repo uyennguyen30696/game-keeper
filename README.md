@@ -81,3 +81,17 @@ If you have any questions please reach out at our Sites
 * [Rachel Kroetch](https://github.com/rekroetch)
 * [Becca Blanton](https://github.com/BeccaBlanton)
 * [Madeline Morris](https://github.com/madehopemorr)
+
+### Future improvement
+
+* Improve the appearance and consistency of UI elements (ex: button color on hover and on clicked)
+
+* Improve mobile version
+
+* Prevent the game cards to be out of shape when changing screen size
+
+* Better style for wishlist and my games list in members page
+
+* Replace heart and own buttons with check marks or alert message if the game is already in wishlist or owned
+
+* Add click event to autocomplete list
