@@ -17,7 +17,7 @@
   font-size: 1em;
 }
 
-img {
+.img {
   width: 120px;
   height: 140px;
 }
@@ -283,7 +283,7 @@ ul {
 }
 
 @media (max-width: 370px) {
-  img {
+  .img {
     width: 110px;
     height: 120px;
   }

@@ -27,9 +27,3 @@ gsap.to("#greendie", {
   y: 400,
   ease: "bounce"
 });
-
-// Function for popup when user clicks wishlist or my games
-// var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-// var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-//   return new bootstrap.Popover(popoverTriggerEl);
-// });

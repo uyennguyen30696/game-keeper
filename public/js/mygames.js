@@ -89,7 +89,7 @@ function showOwnlist() {
       <div class="each-own-card">
         <button class="wishlistItem">
 
-          <img src="${response.games[i].images.thumb}">  ${response.games[i].name}
+          <img src="${response.games[i].images.thumb}" width="50px" height="40px">  ${response.games[i].name}
         </button>
         <div class="panel">
         <div class="row">
@@ -98,7 +98,7 @@ function showOwnlist() {
           </div></div>
         <div class="row">
           <div class="col">
-            <img src = "${response.games[i].images.small}"></img>
+            <img class="img" src="${response.games[i].images.small}"></img>
           </div>
           <div class="col">
             <ul class="card-text">
@@ -175,5 +175,4 @@ function deleteGame(id) {
     window.location.replace("/mygames");
     // If there's an error, handle it by throwing up a bootstrap alert
   });
-
-}
+};

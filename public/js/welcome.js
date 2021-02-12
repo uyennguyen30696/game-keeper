@@ -100,7 +100,7 @@ function runSearchBar(searchWord) {
             <h4 class="card-title">${game.name}</h4>
             <div class="row">
                 <div class="col-4">
-                    <img src = "${game.images.small}"></img>
+                    <img class="img" src = "${game.images.small}"></img>
                 </div>
                 <div class="col">
                     <ul class="card-text">
@@ -141,7 +141,7 @@ function popularGame() {
                   <h4 class="card-title">${popGame.name}</h4>
                   <div class="row">
                       <div class="col-4">
-                          <img src = "${popGame.images.small}"></img>
+                          <img class="img" src="${popGame.images.small}"></img>
                       </div>
                       <div class="col">
                           <ul class="card-text">

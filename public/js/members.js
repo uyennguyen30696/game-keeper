@@ -133,7 +133,7 @@ $(document).ready(() => {
                   <h4 class="card-title">${response.games[i].name}</h4>
                   <div class="row">
                       <div class="col-4">
-                          <img src = "${response.games[i].images.small}"></img>
+                          <img class="img" src="${response.games[i].images.small}"></img>
                       </div>
                       <div class="col">
                           <ul class="card-text">
@@ -281,7 +281,7 @@ $(document).ready(() => {
                   <h4 class="card-title">${response.games[i].name}</h4>
                   <div class="row">
                       <div class="col-4">
-                          <img src = "${response.games[i].images.small}"></img>
+                          <img class="img" src="${response.games[i].images.small}"></img>
                       </div>
                       <div class="col">
                           <ul class="card-text">

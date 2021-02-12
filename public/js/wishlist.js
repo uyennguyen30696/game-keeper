@@ -3,9 +3,7 @@ const gameInfo = {};
 
 $.ajax({
   url: `
-  /api/user_data?secret_token=${sessionStorage.getItem(
-    "myToken"
-  )}`,
+  /api/user_data?secret_token=${sessionStorage.getItem("myToken")}`,
   type: "GET",
   error: function (err) {
     switch (err.status) {
@@ -83,7 +81,7 @@ function showWishlist() {
       const gameCard = $(`
     <div class="each-wish-card">  
     <button class="wishlistItem">
-      <img src="${response.games[i].images.thumb}">  ${response.games[i].name}
+      <img src="${response.games[i].images.thumb}" width="50px" height="40px">  ${response.games[i].name}
     </button>
     <div class="panel">
     <div class="row">
@@ -92,7 +90,7 @@ function showWishlist() {
     </div></div>
     <div class="row">
     <div class="col">
-        <img src = "${response.games[i].images.small}"></img>
+        <img class="img" src="${response.games[i].images.small}"></img>
     </div>
     <div class="col">
         <ul class="card-text">
@@ -168,9 +166,7 @@ function showWishlist() {
 function updateGame(id, own) {
   $.ajax({
     url: `
-    /api/wishlist/${id}?secret_token=${sessionStorage.getItem(
-      "myToken"
-    )}`,
+    /api/wishlist/${id}?secret_token=${sessionStorage.getItem("myToken")}`,
     type: "PUT",
     data: own,
     error: function (err) {
@@ -223,4 +219,4 @@ function deleteGame(id) {
     window.location.replace("/wishlist");
     // If there's an error, handle it by throwing up a bootstrap alert
   });
-}
+};
